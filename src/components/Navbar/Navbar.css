@@ -1,0 +1,126 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  position: static;
+  height: 8rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-toggle {
+  font-size: 2.8rem;
+  display: none;
+}
+
+.navbar-container--sticky {
+  background-color: #fff;
+  opacity: 0.95;
+  position: fixed;
+  box-shadow: 1px 0.01px 1.5rem #dfdfdf;
+  z-index: 1000;
+  animation: appear 0.3s;
+}
+
+@keyframes appear {
+  from {
+    height: 0;
+  }
+  to {
+    height: 8rem;
+  }
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.navbar-link:active,
+.navbar-link:hover {
+  color: var(--text-darker);
+  transform: scale(1.07);
+}
+
+.navbar-logo {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.logo-letter {
+  font-size: 3.2rem;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: inline-block;
+  }
+
+  .navbar-show {
+    position: fixed;
+    background-color: #fff;
+    opacity: 0.97;
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-start;
+    overflow: scroll;
+    animation: showNavbar 0.5s;
+  }
+
+  @keyframes showNavbar {
+    from {
+      height: 8rem;
+    }
+    to {
+      height: 100vh;
+      box-shadow: none;
+    }
+  }
+
+  .navbar-close {
+    align-items: flex-start;
+    animation: closeNavbar 0.5s;
+  }
+
+  @keyframes closeNavbar {
+    from {
+      height: 100%;
+      background-color: #fff;
+      box-shadow: none;
+    }
+    to {
+      height: 8rem;
+    }
+  }
+
+  .navbar-show .navbar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+  }
+}

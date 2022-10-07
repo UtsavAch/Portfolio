@@ -1,0 +1,109 @@
+.contact-container {
+  background-color: #fdf2e9;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom right,
+    var(--color-primary-darker),
+    var(--color-primary)
+  );
+}
+
+.contact-content--form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.contact-content--form h1 {
+  color: var(--text-dark);
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.contact-content--form p {
+  color: var(--text-dark);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  row-gap: 1.8rem;
+  column-gap: 3rem;
+}
+
+.form-element--input {
+  grid-column: span 2;
+}
+
+.form-element--text {
+  grid-column: span 3;
+}
+
+.form-element--button {
+  grid-column: span 1;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-medium);
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+input {
+  display: inline-block;
+  height: 4rem;
+}
+
+.form-button {
+  font-size: 1.8rem;
+  background-color: var(--text-darker);
+  border: none;
+  color: #fff;
+  padding: 0 3rem;
+  border-radius: 8px;
+  height: 5rem;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.form-button:hover {
+  background-color: var(--text-dark);
+}
+
+.form-button:active {
+  background-color: #fff;
+  color: var(--text-darker);
+}
+
+.form-contacts {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}

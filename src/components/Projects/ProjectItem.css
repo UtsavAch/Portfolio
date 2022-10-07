@@ -1,0 +1,70 @@
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  margin-bottom: 5rem;
+}
+
+.project-item--even {
+  flex-direction: row-reverse;
+}
+
+.project-item--content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  position: relative;
+}
+
+.project-title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  letter-spacing: 1.5px;
+}
+
+.project-description {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-medium);
+}
+
+.project-links {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.project-link {
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 400;
+  color: var(--color-primary-darker);
+  transition: all 0.3s;
+}
+
+.project-link:hover {
+  transform: scale(1.07);
+}
+
+.project-index {
+  font-size: 30rem;
+  position: absolute;
+  line-height: 0;
+  font-weight: 600;
+  opacity: 0.2;
+  top: 50%;
+  right: 50%;
+  color: var(--color-primary);
+  z-index: -100;
+}
+
+.project-item--even .project-index {
+  color: var(--color-secondary);
+}
+
+.project-item--image img {
+  width: 45rem;
+  border: 1px solid var(--text-light); /*to be removed later*/
+}
