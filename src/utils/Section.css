@@ -22,3 +22,21 @@
   font-weight: 500;
   color: var(--text-medium);
 }
+
+@media screen and (max-width: 1240px) {
+  .section {
+    padding: 10rem 15rem;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .section {
+    padding: 10rem 10rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section {
+    padding: 10rem 5rem;
+  }
+}

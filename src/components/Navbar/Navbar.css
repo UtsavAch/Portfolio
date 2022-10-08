@@ -124,3 +124,9 @@
     padding-bottom: 5rem;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .navbar-links {
+    width: 65%;
+  }
+}
