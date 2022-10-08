@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .project-item--even {
@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-
   position: relative;
 }
 
@@ -38,7 +37,6 @@
 
 .project-link {
   font-size: 2rem;
-  display: inline-block;
   font-weight: 400;
   color: var(--color-primary-darker);
   transition: all 0.3s;
@@ -67,4 +65,37 @@
 .project-item--image img {
   width: 45rem;
   border: 1px solid var(--text-light); /*to be removed later*/
+}
+
+@media screen and (max-width: 800px) {
+  .project-item {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .project-item--content {
+    text-align: center;
+    width: 75%;
+  }
+
+  .project-index {
+    transform: translateX(50%);
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .project-item--image img {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .project-item--image img {
+    width: 30rem;
+  }
 }

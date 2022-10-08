@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="section-header">
         <h1 className="section-title">PROJECTS</h1>
         <p className="section-subtitle">
-          You can have a look at some of my latest projects
+          You may have a look at some of my latest projects
         </p>
       </div>
       <div className="projects-content">

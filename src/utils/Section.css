@@ -37,6 +37,16 @@
 
 @media screen and (max-width: 1000px) {
   .section {
-    padding: 10rem 5rem;
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .section-subtitle {
+    font-size: 2.8rem;
+  }
+
+  .section-header {
+    margin-bottom: 5rem;
   }
 }
