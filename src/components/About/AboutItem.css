@@ -50,3 +50,68 @@
   padding-left: 3.5rem;
   padding-bottom: 3rem;
 }
+
+@media screen and (max-width: 650px) {
+  .about-item {
+    width: 60rem;
+  }
+
+  .about-item--question---container {
+    gap: 1rem;
+  }
+
+  .about-item--index {
+    font-size: 2.2rem;
+  }
+
+  .about-item--question {
+    font-size: 1.8rem;
+  }
+
+  .about-item--icon {
+    font-size: 3.2rem;
+  }
+
+  .about-item--answer {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .about-item {
+    width: 50rem;
+  }
+
+  .about-item--question---container {
+    gap: 0.5rem;
+  }
+
+  .about-item--index {
+    font-size: 2rem;
+  }
+
+  .about-item--question {
+    font-size: 1.4rem;
+  }
+
+  .about-item--icon {
+    font-size: 2.8rem;
+  }
+
+  .about-item--answer {
+    width: 95%;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .about-item {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about-item {
+    width: 30rem;
+  }
+}

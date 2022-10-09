@@ -7,9 +7,10 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 
   window.addEventListener("scroll", (e) => {
-    if (window.pageYOffset >= 800) {
+    const headerSection = document.getElementById("header-section");
+    if (window.pageYOffset >= headerSection.clientHeight) {
       setSticky("navbar-container--sticky");
-    } else if (window.pageYOffset < 800) {
+    } else if (window.pageYOffset < headerSection.clientHeight) {
       setSticky("");
     }
   });

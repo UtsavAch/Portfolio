@@ -4,6 +4,8 @@ import "./Footer.css";
 import Button from "../../utils/Button/Button";
 
 const Footer = () => {
+  const date = new Date().getFullYear();
+
   return (
     <div className="footer-container section">
       <div className="footer-header">
@@ -20,10 +22,10 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <div>
-            <i className="uil uil-phone">+351 920409213</i>
+            <i className="uil uil-phone"> +351 920409213</i>
           </div>
           <div>
-            <i className="uil uil-envelope">acharya.utsav.15@gmail.com</i>
+            <i className="uil uil-envelope"> acharya.utsav.15@gmail.com</i>
           </div>
         </div>
         <div className="footer-social">
@@ -39,7 +41,7 @@ const Footer = () => {
         </div>
         <div className="footer-copyright">
           Copyright &copy;
-          <span className="footer-copyright--name"> Utsav Acharya</span> 2022
+          <span className="footer-copyright--name"> Utsav Acharya</span> {date}
         </div>
       </div>
     </div>

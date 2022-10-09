@@ -60,7 +60,7 @@ const Slider = () => {
           </div>
         </div>
         <div className="slider-page">
-          {logos.slice(0, logos.length / 3).map((_, i) => (
+          {logos.slice(0, Math.ceil(logos.length / 3)).map((_, i) => (
             <div
               key={i}
               className={`slider-dot ${i === page && "slider-dot--show"}`}

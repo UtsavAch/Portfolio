@@ -87,3 +87,28 @@
 .footer-copyright--name {
   color: #fff;
 }
+
+@media screen and (max-width: 500px) {
+  .footer-header {
+    text-align: center;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .footer-nav {
+    gap: 1.6rem;
+  }
+
+  .footer-nav a:link {
+    font-size: 1.8rem;
+  }
+}

@@ -15,8 +15,8 @@ function App() {
       <Slider />
       <Projects />
       <Contact />
-      {/* <About /> */}
-      {/* <Footer /> */}
+      <About />
+      <Footer />
     </div>
   );
 }
